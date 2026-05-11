@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" type="image/png" href="assets/image/logo.png">
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>SchoolAutomation.com — Smart Digital Solutions for Pakistani Schools</title>
@@ -222,17 +221,6 @@ footer{background:#050e1a;color:rgba(255,255,255,.5);padding:3rem 2rem 1.5rem}
   .ft{grid-template-columns:1fr 1fr}
   .frow{grid-template-columns:1fr}
 }
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo-img {
-  width: 40px;   /* adjust size */
-  height: 40px;
-  object-fit: contain;
-}
 </style>
 </head>
 <body>
@@ -241,11 +229,9 @@ footer{background:#050e1a;color:rgba(255,255,255,.5);padding:3rem 2rem 1.5rem}
 <nav>
   <div class="nav-inner">
     <div class="logo">
- <div class="logo">
-  <img src="assets/image/logo.jpeg" alt="Logo" class="logo-img">
-</div>
-  <div class="logo-name">Smart<span>Edu</span>Pluse</div>
-</div>
+      <div class="logo-box">SA</div>
+      <div class="logo-name">School<span>Automation</span>.com</div>
+    </div>
     <div class="nav-links">
       <a href="#portals">Portals</a>
       <a href="#ai-section">AI Features</a>
@@ -472,70 +458,171 @@ footer{background:#050e1a;color:rgba(255,255,255,.5);padding:3rem 2rem 1.5rem}
   <div class="si">
     <div class="tc">
       <div class="stag">Transparent Pricing</div>
-      <h2 class="stitle">Plans for Every School Size</h2>
-      <p class="ssub" style="margin:0 auto">No hidden charges. Full system included. Scale as your school grows.</p>
+      <h2 class="stitle">Simple Monthly Fees — One Low Setup Cost</h2>
+      <p class="ssub" style="margin:0 auto">One flat setup fee of <strong>Rs. 5,000</strong> for all schools (one-time only). Monthly fee based on your student strength. No hidden charges.</p>
     </div>
-    <div style="display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin:1.5rem 0">
+
+    <!-- SETUP FEE BANNER -->
+    <div style="margin:2rem 0;background:linear-gradient(135deg,#0a1628,#0d3d2a);border-radius:20px;padding:28px 32px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px">
+      <div>
+        <div style="font-size:12px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:#f0b840;margin-bottom:6px">One-Time Setup Fee — All Schools</div>
+        <div style="font-family:'Playfair Display',serif;font-size:2.8rem;color:#fff;font-weight:700;line-height:1">Rs. 5,000</div>
+        <div style="font-size:14px;color:rgba(255,255,255,.55);margin-top:6px">Paid once at registration. Covers full system setup, data import & staff training.</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,.75)"><span style="color:#f0b840;font-weight:700">✓</span> System configuration & setup</div>
+        <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,.75)"><span style="color:#f0b840;font-weight:700">✓</span> Student & teacher data import</div>
+        <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,.75)"><span style="color:#f0b840;font-weight:700">✓</span> Free staff training session</div>
+        <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,.75)"><span style="color:#f0b840;font-weight:700">✓</span> Mobile app setup & launch</div>
+      </div>
+    </div>
+
+    <!-- OFFERS -->
+    <div style="display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-bottom:2.5rem">
       <div style="background:#f0fdf4;color:#166534;border:1px solid #bbf7d0;padding:8px 18px;border-radius:100px;font-size:13px;font-weight:600">🎉 1 Month FREE Trial Available</div>
-      <div style="background:#f0fdf4;color:#166534;border:1px solid #bbf7d0;padding:8px 18px;border-radius:100px;font-size:13px;font-weight:600">🎓 Free Staff Training & Demo</div>
+      <div style="background:#f0fdf4;color:#166534;border:1px solid #bbf7d0;padding:8px 18px;border-radius:100px;font-size:13px;font-weight:600">🎓 Free Demo & Staff Training</div>
       <div style="background:#f0fdf4;color:#166534;border:1px solid #bbf7d0;padding:8px 18px;border-radius:100px;font-size:13px;font-weight:600">⚙️ Free Initial Setup Support</div>
     </div>
-    <div class="price-grid">
-      <div class="pc">
-        <div class="pc-dot" style="background:#10b981"></div>
-        <div class="pc-name" style="color:#0f6e56">🟢 Basic Plan</div>
-        <div class="pc-price">Rs. 15,000 <sub>/month</sub></div>
-        <div class="pc-setup">Setup Fee: Rs. 50,000 (one-time)</div>
-        <div class="pc-for">For up to 300 students</div>
-        <ul class="pc-feats">
-          <li>LMS + ERP System</li>
-          <li>Student, Teacher & Admin portals</li>
-          <li>Attendance & marks management</li>
-          <li>Fee collection & basic reports</li>
-          <li>Email & chat support</li>
-        </ul>
-        <a href="#contact"><button class="btn-pc outline">Get Started</button></a>
+
+    <!-- PRICING TABLE -->
+    <div style="background:#fff;border:1.5px solid #e8effc;border-radius:20px;overflow:hidden;box-shadow:0 4px 24px rgba(10,22,40,.07)">
+      <div style="background:linear-gradient(135deg,#0a1628,#1a3a6b);padding:18px 28px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem">
+        <div style="font-size:13px;font-weight:700;color:#f0b840;letter-spacing:.4px">SCHOOL STRENGTH</div>
+        <div style="font-size:13px;font-weight:700;color:#f0b840;letter-spacing:.4px;text-align:center">MONTHLY FEE</div>
+        <div style="font-size:13px;font-weight:700;color:#f0b840;letter-spacing:.4px;text-align:right">SETUP FEE</div>
       </div>
-      <div class="pc pop">
-        <div class="pop-tag">⭐ Most Popular</div>
-        <div class="pc-dot" style="background:#3b82f6"></div>
-        <div class="pc-name" style="color:#185fa5">🔵 Standard Plan</div>
-        <div class="pc-price">Rs. 35,000 – 60,000 <sub>/month</sub></div>
-        <div class="pc-setup">Setup Fee: Rs. 100,000 (one-time)</div>
-        <div class="pc-for">For 300 – 1,000 students</div>
-        <ul class="pc-feats">
-          <li>All Basic features included</li>
-          <li>Mobile apps (Parent + Student)</li>
-          <li>Advanced analytics & reports</li>
-          <li>Test & exam management system</li>
-          <li>Timetable builder</li>
-          <li>Priority support</li>
-        </ul>
-        <a href="#contact"><button class="btn-pc gold">Enroll Your School</button></a>
-      </div>
-      <div class="pc">
-        <div class="pc-dot" style="background:#7c3aed"></div>
-        <div class="pc-name" style="color:#534ab7">🟣 Premium Plan</div>
-        <div class="pc-price">Rs. 70,000 – 150,000 <sub>/month</sub></div>
-        <div class="pc-setup">Setup: Rs. 150,000 – 300,000</div>
-        <div class="pc-for">For 1,000+ students / colleges</div>
-        <ul class="pc-feats">
-          <li>All Standard features included</li>
-          <li>AI exam paper generation</li>
-          <li>Full mobile app suite</li>
-          <li>Custom branding & integrations</li>
-          <li>Dedicated account manager</li>
-          <li>On-site training & setup</li>
-        </ul>
-        <a href="#contact"><button class="btn-pc outline">Contact for Quote</button></a>
+      <div id="pricing-rows">
+        <!-- rows injected by JS -->
       </div>
     </div>
-    <h3 style="font-size:18px;font-weight:700;color:#0a1628;margin-top:3rem;margin-bottom:.5rem">Add-On Services</h3>
+
+    <!-- CALCULATOR -->
+    <div style="margin-top:2rem;background:linear-gradient(135deg,#fef3e2,#fffbf0);border:1.5px solid #f3d99a;border-radius:20px;padding:28px">
+      <h3 style="font-size:18px;font-weight:700;color:#0a1628;margin-bottom:.5rem">💡 Fee Calculator</h3>
+      <p style="font-size:14px;color:#64748b;margin-bottom:1.2rem">Enter your school's student count to see your exact monthly fee instantly.</p>
+      <div style="display:flex;gap:12px;align-items:flex-end;flex-wrap:wrap">
+        <div style="flex:1;min-width:200px">
+          <label style="font-size:13px;font-weight:600;color:#374151;display:block;margin-bottom:6px">Number of Students</label>
+          <input type="number" id="calc-input" placeholder="e.g. 350" min="1" oninput="calcFee()"
+            style="width:100%;padding:12px 16px;border:1.5px solid #e2eaf4;border-radius:10px;font-size:15px;font-family:inherit;outline:none;transition:border-color .2s"
+            onfocus="this.style.borderColor='#c8922a'" onblur="this.style.borderColor='#e2eaf4'"/>
+        </div>
+        <div id="calc-result" style="flex:1;min-width:200px;background:#fff;border:1.5px solid #c8922a;border-radius:12px;padding:14px 20px;display:none;animation:fadeIn .3s ease">
+          <div style="font-size:12px;font-weight:600;color:#c8922a;text-transform:uppercase;letter-spacing:.4px;margin-bottom:4px">Your Monthly Fee</div>
+          <div id="calc-amount" style="font-size:1.8rem;font-weight:800;color:#0a1628;margin-bottom:2px"></div>
+          <div id="calc-range" style="font-size:12px;color:#64748b;margin-bottom:4px"></div>
+          <div style="font-size:12px;color:#10b981;font-weight:600">+ Rs. 5,000 setup (one-time only)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CUSTOM FEATURE ADD-ON -->
+    <div style="margin-top:2rem;background:#fff;border:1.5px solid #e8effc;border-radius:20px;padding:28px">
+      <div style="display:flex;align-items:flex-start;gap:16px;flex-wrap:wrap">
+        <div style="width:52px;height:52px;background:linear-gradient(135deg,#c8922a,#f0b840);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0">⚙️</div>
+        <div style="flex:1;min-width:240px">
+          <h3 style="font-size:18px;font-weight:700;color:#0a1628;margin-bottom:.4rem">Custom Feature Add-On</h3>
+          <p style="font-size:14px;color:#64748b;line-height:1.7;margin-bottom:1rem">Every school is different. If your school needs an extra feature not included in the standard system — we build it for you and add it to your portal.</p>
+          <div style="background:linear-gradient(135deg,#fef3e2,#fffbf0);border:1px solid #f3d99a;border-radius:12px;padding:16px 20px;display:inline-flex;align-items:center;gap:12px">
+            <div>
+              <div style="font-size:12px;font-weight:600;color:#c8922a;text-transform:uppercase;letter-spacing:.4px">Per Custom Feature</div>
+              <div style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:#0a1628">Rs. 5,000</div>
+            </div>
+            <div style="height:48px;width:1px;background:#f3d99a"></div>
+            <div style="font-size:13px;color:#78350f">One-time charge<br>per new feature added</div>
+          </div>
+          <div style="margin-top:1rem;display:flex;flex-wrap:wrap;gap:8px">
+            <div style="background:#fef3e2;color:#92400e;border:1px solid #fcd34d;padding:5px 12px;border-radius:8px;font-size:12px;font-weight:600">📊 Custom Reports</div>
+            <div style="background:#fef3e2;color:#92400e;border:1px solid #fcd34d;padding:5px 12px;border-radius:8px;font-size:12px;font-weight:600">🔗 Third-Party Integrations</div>
+            <div style="background:#fef3e2;color:#92400e;border:1px solid #fcd34d;padding:5px 12px;border-radius:8px;font-size:12px;font-weight:600">📋 Special Workflows</div>
+            <div style="background:#fef3e2;color:#92400e;border:1px solid #fcd34d;padding:5px 12px;border-radius:8px;font-size:12px;font-weight:600">+ Any other feature</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ADDON SERVICES -->
+    <h3 style="font-size:18px;font-weight:700;color:#0a1628;margin-top:2.5rem;margin-bottom:.75rem">Add-On Services</h3>
     <div class="addon-grid">
       <div class="addon"><div class="addon-icon">📲</div><div class="addon-name">Custom Mobile App Branding</div><div class="addon-price">Rs. 30,000 – 50,000</div></div>
       <div class="addon"><div class="addon-icon">🤖</div><div class="addon-name">AI Module Upgrade</div><div class="addon-price">Available on request</div></div>
       <div class="addon"><div class="addon-icon">📩</div><div class="addon-name">SMS / WhatsApp Integration</div><div class="addon-price">Pay per usage</div></div>
       <div class="addon"><div class="addon-icon">☁️</div><div class="addon-name">Cloud Hosting & Backup</div><div class="addon-price">Optional add-on</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SMART FEATURES -->
+<section style="background:#fff;padding:5rem 2rem" id="smart-features">
+  <div class="si">
+    <div class="tc" style="margin-bottom:2.5rem">
+      <div class="stag">Smart Automation</div>
+      <h2 class="stitle">Auto-Alerts, Tests & Progress Tracking</h2>
+      <p class="ssub" style="margin:0 auto">EduPanel doesn't just store data — it actively helps teachers, students and parents stay on track with automated alerts and real-time progress reporting.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px">
+
+      <div style="background:linear-gradient(160deg,#0a1628,#1a3a6b);border-radius:20px;padding:28px;color:#fff">
+        <div style="width:52px;height:52px;background:rgba(200,146,42,.2);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:16px">📅</div>
+        <h3 style="font-size:18px;font-weight:700;margin-bottom:8px">Weekly & Monthly Test Sessions</h3>
+        <p style="font-size:14px;color:rgba(255,255,255,.6);line-height:1.7;margin-bottom:14px">Teachers schedule weekly and monthly tests directly inside EduPanel. The system auto-creates test sessions and notifies all relevant students and parents.</p>
+        <div style="display:flex;flex-direction:column;gap:7px">
+          <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,.8)"><span style="color:#f0b840">✓</span> Auto-schedule weekly tests per class</div>
+          <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,.8)"><span style="color:#f0b840">✓</span> Monthly exam calendar auto-generated</div>
+          <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,.8)"><span style="color:#f0b840">✓</span> Results auto-posted after teacher submission</div>
+        </div>
+      </div>
+
+      <div style="background:linear-gradient(160deg,#0d3d2a,#1a7a4a);border-radius:20px;padding:28px;color:#fff">
+        <div style="width:52px;height:52px;background:rgba(16,185,129,.2);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:16px">🔔</div>
+        <h3 style="font-size:18px;font-weight:700;margin-bottom:8px">Auto-Alert System</h3>
+        <p style="font-size:14px;color:rgba(255,255,255,.6);line-height:1.7;margin-bottom:14px">The system automatically sends alerts to students and parents for upcoming tests, low attendance, missing homework, fee due dates, and important school notices.</p>
+        <div style="display:flex;flex-direction:column;gap:7px">
+          <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,.8)"><span style="color:#6ee7b7">✓</span> Test & exam reminders</div>
+          <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,.8)"><span style="color:#6ee7b7">✓</span> Low attendance warnings to parents</div>
+          <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,.8)"><span style="color:#6ee7b7">✓</span> Fee due date alerts</div>
+          <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,.8)"><span style="color:#6ee7b7">✓</span> Result published notifications</div>
+        </div>
+      </div>
+
+      <div style="background:linear-gradient(160deg,#4c1d95,#7c3aed);border-radius:20px;padding:28px;color:#fff">
+        <div style="width:52px;height:52px;background:rgba(167,139,250,.2);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:16px">📊</div>
+        <h3 style="font-size:18px;font-weight:700;margin-bottom:8px">Student Overall Progress</h3>
+        <p style="font-size:14px;color:rgba(255,255,255,.6);line-height:1.7;margin-bottom:14px">Each student has a unified progress view — attendance percentage, test results, homework completion, and subject-wise performance — all in one dashboard for students, parents and teachers.</p>
+        <div style="display:flex;flex-direction:column;gap:7px">
+          <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,.8)"><span style="color:#c4b5fd">✓</span> Attendance % shown on profile</div>
+          <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,.8)"><span style="color:#c4b5fd">✓</span> Test scores across all subjects</div>
+          <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,.8)"><span style="color:#c4b5fd">✓</span> Monthly progress report auto-generated</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Progress bar visual -->
+    <div style="margin-top:2rem;background:var(--cream);border-radius:20px;padding:28px;border:1px solid #e8effc">
+      <h3 style="font-size:16px;font-weight:700;color:#0a1628;margin-bottom:1.2rem">📈 Sample Student Progress View</h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px">
+        <div>
+          <div style="display:flex;justify-content:space-between;margin-bottom:6px"><span style="font-size:13px;font-weight:600;color:#374151">Attendance</span><span style="font-size:13px;font-weight:700;color:#10b981">87%</span></div>
+          <div style="background:#e2e8f0;border-radius:100px;height:8px"><div style="background:linear-gradient(90deg,#10b981,#6ee7b7);height:8px;border-radius:100px;width:87%"></div></div>
+        </div>
+        <div>
+          <div style="display:flex;justify-content:space-between;margin-bottom:6px"><span style="font-size:13px;font-weight:600;color:#374151">Weekly Tests</span><span style="font-size:13px;font-weight:700;color:#c8922a">74%</span></div>
+          <div style="background:#e2e8f0;border-radius:100px;height:8px"><div style="background:linear-gradient(90deg,#c8922a,#f0b840);height:8px;border-radius:100px;width:74%"></div></div>
+        </div>
+        <div>
+          <div style="display:flex;justify-content:space-between;margin-bottom:6px"><span style="font-size:13px;font-weight:600;color:#374151">Monthly Exams</span><span style="font-size:13px;font-weight:700;color:#3b82f6">82%</span></div>
+          <div style="background:#e2e8f0;border-radius:100px;height:8px"><div style="background:linear-gradient(90deg,#3b82f6,#93c5fd);height:8px;border-radius:100px;width:82%"></div></div>
+        </div>
+        <div>
+          <div style="display:flex;justify-content:space-between;margin-bottom:6px"><span style="font-size:13px;font-weight:600;color:#374151">Homework Done</span><span style="font-size:13px;font-weight:700;color:#7c3aed">91%</span></div>
+          <div style="background:#e2e8f0;border-radius:100px;height:8px"><div style="background:linear-gradient(90deg,#7c3aed,#c4b5fd);height:8px;border-radius:100px;width:91%"></div></div>
+        </div>
+      </div>
+      <div style="margin-top:14px;display:flex;gap:8px;flex-wrap:wrap">
+        <div style="background:#f0fdf4;color:#166534;border:1px solid #bbf7d0;padding:5px 12px;border-radius:8px;font-size:12px;font-weight:600">🔔 Auto-alert sent to parent if attendance drops below 75%</div>
+        <div style="background:#eff6ff;color:#1e40af;border:1px solid #bfdbfe;padding:5px 12px;border-radius:8px;font-size:12px;font-weight:600">📩 Test reminder sent 1 day before exam</div>
+      </div>
     </div>
   </div>
 </section>
@@ -666,5 +753,86 @@ function switchPortal(role, el) {
   el.classList.add('active', role);
 }
 </script>
+
+
+
+
+<script>
+(function() {
+  var tiers = [
+    {label: "Up to 200 students",         min:1,    max:200,   fee:5000},
+    {label: "201 – 500 students",          min:201,  max:500,   fee:8000},
+    {label: "501 – 800 students",          min:501,  max:800,   fee:10000},
+    {label: "801 – 1,000 students",        min:801,  max:1000,  fee:12000},
+    {label: "1,001 – 1,200 students",      min:1001, max:1200,  fee:14000},
+    {label: "1,201 – 1,500 students",      min:1201, max:1500,  fee:16000},
+    {label: "1,501 – 2,000 students",      min:1501, max:2000,  fee:20000},
+    {label: "2,001 – 3,000 students",      min:2001, max:3000,  fee:25000},
+    {label: "3,000+ students",             min:3001, max:99999, fee:30000}
+  ];
+
+  function fmt(n) {
+    return "Rs. " + n.toLocaleString("en-PK");
+  }
+
+  // Render pricing rows
+  window.addEventListener("DOMContentLoaded", function () {
+    var rows = document.getElementById("pricing-rows");
+    if (!rows) return;
+    var html = "";
+    tiers.forEach(function(t, i) {
+      var bg = i % 2 === 0 ? "#ffffff" : "#f8faff";
+      var highlight = "";
+      // highlight middle tiers
+      html += '<div class="ptrow" data-min="' + t.min + '" data-max="' + t.max + '" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;padding:14px 28px;background:' + bg + ';border-bottom:1px solid #f1f5f9;align-items:center;transition:background .2s">'
+        + '<div style="font-size:14px;font-weight:600;color:#334155">' + t.label + '</div>'
+        + '<div style="text-align:center;font-size:18px;font-weight:700;color:#c8922a">' + fmt(t.fee) + '<span style="font-size:13px;font-weight:400;color:#94a3b8"> /month</span></div>'
+        + '<div style="text-align:right;font-size:13px;color:#64748b">Rs. 5,000 <span style="color:#10b981;font-weight:600">(one-time)</span></div>'
+        + '</div>';
+    });
+    rows.innerHTML = html;
+  });
+
+  // Fee calculator
+  window.calcFee = function() {
+    var input = document.getElementById("calc-input");
+    var result = document.getElementById("calc-result");
+    var amountEl = document.getElementById("calc-amount");
+    var rangeEl  = document.getElementById("calc-range");
+    if (!input || !result || !amountEl) return;
+
+    var val = parseInt(input.value, 10);
+    if (!val || val < 1) {
+      result.style.display = "none";
+      // reset row highlights
+      document.querySelectorAll(".ptrow").forEach(function(r){ r.style.background = ""; });
+      return;
+    }
+
+    var fee = 30000;
+    var matchedMin = 3001, matchedMax = 99999;
+    for (var i = 0; i < tiers.length; i++) {
+      if (val >= tiers[i].min && val <= tiers[i].max) {
+        fee = tiers[i].fee;
+        matchedMin = tiers[i].min;
+        matchedMax = tiers[i].max;
+        break;
+      }
+    }
+
+    // Highlight matching row
+    document.querySelectorAll(".ptrow").forEach(function(r) {
+      var rmin = parseInt(r.dataset.min);
+      var rmax = parseInt(r.dataset.max);
+      r.style.background = (val >= rmin && val <= rmax) ? "#fef3e2" : "";
+    });
+
+    amountEl.textContent = fmt(fee) + " / month";
+    if (rangeEl) rangeEl.textContent = "For schools with " + val.toLocaleString() + " students";
+    result.style.display = "block";
+  };
+})();
+</script>
+
 </body>
 </html>
